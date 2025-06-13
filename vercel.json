@@ -1,9 +1,5 @@
+
 {
-  "buildCommand": "npm ci --force && npm run build",
-  "functions": {
-    "app/api/**/*.js": {
-      "maxDuration": 30
-    }
-  },
-  "regions": ["iad1"]
+  "buildCommand": "npm install --ignore-scripts && npm run build",
+  "outputDirectory": ".next"
 }
