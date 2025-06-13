@@ -19,7 +19,7 @@ import {
 } from "@mui/material";
 import { financialQuestions } from "./gameQuestions";
 import { useUserData } from "./dashboard/UserDataProvider";
-import { useAuth } from "../components/auth/AuthContext";
+import { useAuth } from "./auth/AuthContext";
 
 const Game = () => {
   const router = useRouter();
