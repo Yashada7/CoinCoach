@@ -18,7 +18,7 @@ import {
   Chip
 } from "@mui/material";
 import { financialQuestions } from "./gameQuestions";
-import { useUserData } from "../components/dashboard/UserDataProvider";
+import { useUserData } from "./dashboard/UserDataProvider";
 import { useAuth } from "../components/auth/AuthContext";
 
 const Game = () => {
