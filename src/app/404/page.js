@@ -1,22 +1,19 @@
-// app/404/page.jsx
 "use client";
 
-import React, { Suspense } from "react";
-
-export const dynamic = "force-dynamic";
+import { Suspense } from "react";
 
 function NotFoundContent() {
   return (
-    <div className="text-center mt-32">
-      <h1 className="text-5xl font-bold text-purple-800">404</h1>
-      <p className="mt-4 text-gray-600 text-lg">This page does not exist.</p>
+    <div className="text-center py-20">
+      <h1 className="text-4xl font-bold mb-4">404 - Page Not Found</h1>
+      <p className="text-lg text-gray-600">Sorry, we couldn’t find what you were looking for.</p>
     </div>
   );
 }
 
-export default function NotFoundPage() {
+export default function NotFound() {
   return (
-    <Suspense fallback={<div>Loading 404 page...</div>}>
+    <Suspense fallback={<div>Loading 404...</div>}>
       <NotFoundContent />
     </Suspense>
   );
