@@ -44,12 +44,12 @@ import {
   EditNote,
 } from "@mui/icons-material";
 import { useAuth } from "../components/auth/AuthContext";
-import UserDataProvider from "./dashboard/UserDataProvider";
+import { useUserData } from "./dashboard/UserDataProvider";
 
 const Results = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const { userData } = UserDataProvider();
+  const { userData } = useUserData();
   const { user } = useAuth();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));

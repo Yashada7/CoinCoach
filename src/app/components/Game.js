@@ -18,12 +18,12 @@ import {
   Chip
 } from "@mui/material";
 import { financialQuestions } from "./gameQuestions";
-import UserDataProvider from "./dashboard/UserDataProvider";
+import { useUserData } from "./dashboard/UserDataProvider";
 import { useAuth } from "../components/auth/AuthContext";
 
 const Game = () => {
   const router = useRouter();
-  const { userData, loading: userDataLoading } = UserDataProvider() || { userData: null, loading: false };
+  const { userData, loading: userDataLoading } = useUserData() || { userData: null, loading: false };
 
   const { user } = useAuth();
   const [debt, setDebt] = useState(0);
