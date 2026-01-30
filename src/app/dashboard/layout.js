@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { AuthProvider } from '../components/auth/AuthContext';
-import UserDataProvider from './dashboard/UserDataProvider';
+import UserDataProvider from '../components/dashboard/UserDataProvider';
 
 export default function DashboardLayout({ children }) {
   return (
