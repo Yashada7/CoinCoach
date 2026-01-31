@@ -40,6 +40,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Project Overview
 CoinCoach is a financial coaching and expense tracking application designed to help users manage their money efficiently.  
 The app allows users to track expenses, monitor savings goals, and build healthy financial habits through an interactive dashboard and personalized insights.
+This project focuses on using gamified approach to inculcate financial literacy among peers
 
 ---
 
